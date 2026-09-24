@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Veda Bastian Ar Ramzy</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="portofolio.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <nav>
+            <a href="#beranda" class="logo">Home</a>
+            
+            <!-- Tombol Hamburger (Javascript DOM digunakan di sini) -->
+            <button class="hamburger" id="hamburger-btn">
+                &#9776;
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#beranda" class="nav-link">Beranda</a></li>
+                <li><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
+                <li><a href="#proyek" class="nav-link">Project</a></li>
+                <li><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 1. BAGIAN NAMA (Hero) -->
+    <section id="beranda" class="container">
+        <!-- Teks sapaan ini akan diubah oleh Javascript berdasarkan waktu -->
+        <p id="greeting">Halo,</p>
+        <h1 class="hero-name">Saya Veda Bastian Ar Ramzy</h1>
+        <p class="hero-desc">Seorang mahasiswa Informatika yang antusias dalam pengembangan web dan manajemen basis data. Selamat datang di portofolio saya.</p>
+    </section>
+
+    <!-- 2. BAGIAN PENDIDIKAN -->
+    <section id="pendidikan" class="container">
+        <h2 class="section-title">Riwayat Pendidikan</h2>
+        <div class="timeline">
+            <!-- Pendidikan 1 (Kiri) -->
+            <div class="edu-item left">
+                <div class="edu-content">
+                    <p class="edu-year">2025 - Sekarang</p>
+                    <h3 class="edu-title">Universitas Jember</h3>
+                    <p class="edu-desc">Program Studi Informatika, Fakultas Ilmu Komputer.</p>
+                </div>
+            </div>
+            <!-- Pendidikan 2 (Kanan) -->
+            <div class="edu-item right">
+                <div class="edu-content">
+                    <p class="edu-year">2022 - 2025</p>
+                    <h3 class="edu-title">SMA Negeri 1 Blitar</h3>
+                    <p class="edu-desc">Jurusan MIPA. Aktif dalam ekstrakurikuler Bridge dan Badminton.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. BAGIAN PROYEK -->
+    <section id="proyek" class="container">
+        <h2 class="section-title">Project Saya</h2>
+        <div class="projects-grid">
+            
+            <!-- Proyek 1 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Slicing Web Portofolio</h3>
+                    <p class="project-desc">Membangun struktur website portofolio interaktif dan responsif dari awal (scratch) tanpa menggunakan framework CSS seperti Tailwind atau Bootstrap.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">Plain CSS</span>
+                        <span class="tech-tag">JavaScript DOM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 2 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Basis Data Kos Delacifato</h3>
+                    <p class="project-desc">Merancang skema database relasional (SQL) komprehensif untuk sistem manajemen indekos. Mencakup pengelolaan data penyewa, reservasi kamar, status tagihan otomatis, hingga detail fasilitas kamar.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Database Design</span>
+                        <span class="tech-tag">DDL & DML</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="kontak" class="container">
+        <h2 class="section-title">Hubungi Saya</h2>
+        
+        <div class="contact-card">
+            <h3>Mari Berkolaborasi!</h3>
+            <p>Jika Anda tertarik dengan profil saya atau memiliki pertanyaan, jangan ragu untuk menghubungi saya melalui kontak di bawah ini.</p>
+            
+            <ul class="contact-info-list">
+                <li class="contact-info-item">
+                    <a href="mailto:vedabastian128@gmail.com">
+                        &#9993; vedabastian128@gmail.com
+                    </a>
+                </li>
+                <li class="contact-info-item">
+                    <a href="tel:085815170877">
+                        &#128222; 0858 - 1517 - 0877
+                    </a>
+                </li>
+                <li class="contact-info-item">
+                    <a href="https://id.linkedin.com/in/veda-ramzy-a264b8387" target="_blank" rel="noopener noreferrer">
+                        &#128188; Profil LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Menghubungkan ke file JavaScript eksternal -->
+    <script src="portofolio.js"></script>
+</body>
+</html>
